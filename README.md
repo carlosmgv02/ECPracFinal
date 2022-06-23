@@ -20,3 +20,5 @@ Pràctica final Estructura de Computadors
 	* *Tarea5-1.mem*: codificació del programa en ensamblador de les instruccions bàsiques.
 	* *Tarea5-2.asm*: programa en ensamblador per a provar les intstruccions adicionals afegides.
 	* *Tarea5-2.mem*: codificació del programa en ensamblador de les instruccions adicionals.
+* **INFORME_EC.pdf**: documentació de la pràctica
+* **Processadors.xlsx**: anàlisi dels benchmarks amb gràfiques
