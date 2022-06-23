@@ -1,0 +1,63 @@
+#! /bin/bash
+
+function grepData
+{
+	cacti -infile $filename > auxFile
+	grep "Access time" auxFile >> $file
+	grep "Cache height x width" auxFile >> $file
+	grep "Total leakage power of a bank" auxFile >> $file
+}
+
+touch auxFile
+file="RESULTATS.TXT"
+echo "INTEL" > $file
+
+filename="cacheIntelL1I.cfg"
+echo "L1 Instructions" >>$file
+grepData
+
+filename="cacheIntelL1D.cfg"
+echo "L1 Data" >> $file
+grepData
+
+filename="cacheIntelL2.cfg"
+echo "L2 Cache" >> $file
+grepData
+
+echo "" >>$file
+
+echo "RYZEN 7 3700U" >>$file
+
+filename="cacheRyzen7L1I.cfg"
+echo "L1 Instructions" >> $file
+grepData
+
+filename="cacheRyzen7L1D.cfg"
+echo "L1 Data" >> $file
+grepData
+
+filename="cacheRyzen7L2.cfg"
+echo "L2 Cache" >> $file
+grepData
+
+echo "" >>$file
+
+echo "RYZEN 7 ZEN 2" >>$file
+
+filename="cacheRyzenZenL1I.cfg"
+echo "L1 Instructions" >> $file
+grepData
+
+filename="cacheRyzenZenL1D.cfg"
+echo "L1 Data" >> $file
+grepData
+
+filename="cacheRyzenZenL2.cfg"
+echo "L2 Cache">> $file
+grepData
+
+filenme="HalfSize.cfg"
+echo "IntelHalfSize" >> $file
+grepData
+
+rm auxFile

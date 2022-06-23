@@ -1,0 +1,82 @@
+#! /bin/bash
+
+cd /lib/specs2000/art/data/ref
+
+art="/home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/art/"
+
+intelDir="/home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/art/Intel/"
+ryzen7Dir="/home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/art/Ryzen7"
+ryzen7_2Dir="/home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/art/Ryzen7Zen"
+
+#TASCA 6.2
+#Core i7-7600U – Intel
+processor="Intel"
+
+#IL1
+tasca="Tasca6-2_IL1i7.txt"
+echo $tasca
+sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_IL1:64:64:8:l -redir:sim $intelDir/$tasca /lib/specs2000/art/exe/art.exe -scanfile c756hel.in -trainfile1 a10.img -stride 2 -startx 134 -starty 220 -endx 139 -endy 225 -objects 1 > $art/test.out 2> $art/test.err
+
+grep "CACHE" $intelDir/$tasca > $intelDir/CACHE$processor
+
+#DL1
+tasca="Tasca6-2_DL1i7.txt"
+echo $tasca
+sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:dl1 CACHE_DL1:64:64:8:l -redir:sim $intelDir/$tasca /lib/specs2000/art/exe/art.exe -scanfile c756hel.in -trainfile1 a10.img -stride 2 -startx 134 -starty 220 -endx 139 -endy 225 -objects 1 > $art/test.out 2> $art/test.err
+
+grep "CACHE" $intelDir/$tasca >> $intelDir/CACHE$processor
+
+#DL2
+tasca="Tasca6-2_DL2i7.txt"
+echo $tasca
+sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:dl2 CACHE_L2:1024:64:4:l -redir:sim $intelDir/$tasca /lib/specs2000/art/exe/art.exe -scanfile c756hel.in -trainfile1 a10.img -stride 2 -startx 134 -starty 220 -endx 139 -endy 225 -objects 1 > $art/test.out 2> $art/test.err
+
+grep "CACHE" $intelDir/$tasca >> $intelDir/CACHE$processor
+
+
+#Ryzen 7 3700U – AMD
+processor="Ryzen7"
+#IL1
+tasca="Tasca6-2_IL1r7.txt"
+echo $tasca
+sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_IL1:256:64:4:l -redir:sim $ryzen7Dir/$tasca /lib/specs2000/art/exe/art.exe -scanfile c756hel.in -trainfile1 a10.img -stride 2 -startx 134 -starty 220 -endx 139 -endy 225 -objects 1 > $art/test.out 2> $art/test.err
+
+grep "CACHE" $ryzen7Dir/$tasca > $ryzen7Dir/CACHE$processor
+
+#DL1
+tasca="Tasca6-2_DL1r7.txt"
+echo $tasca
+sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_DL1:64:64:8:l -redir:sim $ryzen7Dir/$tasca /lib/specs2000/art/exe/art.exe -scanfile c756hel.in -trainfile1 a10.img -stride 2 -startx 134 -starty 220 -endx 139 -endy 225 -objects 1 > $art/test.out 2> $art/test.err
+
+grep "CACHE" $ryzen7Dir/$tasca >> $ryzen7Dir/CACHE$processor
+
+
+#DL2
+tasca="Tasca6-2_DL2r7.txt"
+echo $tasca
+sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_L2:1024:64:8:l -redir:sim $ryzen7Dir/$tasca /lib/specs2000/art/exe/art.exe -scanfile c756hel.in -trainfile1 a10.img -stride 2 -startx 134 -starty 220 -endx 139 -endy 225 -objects 1 > $art/test.out 2> $art/test.err
+
+grep "CACHE" $ryzen7Dir/$tasca >> $ryzen7Dir/CACHE$processor
+
+#Ryzen 7 Zen 2 – AMD
+processor="Ryzen7_2"
+#IL1
+tasca="Tasca6-2_IL1r7-2.txt"
+sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_IL1:64:64:8:l -redir:sim $ryzen7_2Dir/$tasca /lib/specs2000/art/exe/art.exe -scanfile c756hel.in -trainfile1 a10.img -stride 2 -startx 134 -starty 220 -endx 139 -endy 225 -objects 1 > $art/test.out 2> $art/test.err
+
+grep "CACHE" $ryzen7_2Dir/$tasca > $ryzen7_2Dir/CACHE$processor
+
+#DL1
+tasca="Tasca6-2_DL1r7-2.txt"
+echo $tasca
+sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_DL1:64:64:8:l -redir:sim $ryzen7_2Dir/$tasca /lib/specs2000/art/exe/art.exe -scanfile c756hel.in -trainfile1 a10.img -stride 2 -startx 134 -starty 220 -endx 139 -endy 225 -objects 1 > $art/test.out 2> $art/test.err
+
+grep "CACHE" $ryzen7_2Dir/$tasca >>$ryzen7_2Dir/CACHE$processor
+
+#DL2
+tasca="Tasca6-2_DL2r7.txt"
+echo $tasca
+sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_L2:1024:64:8:l -redir:sim $ryzen7_2Dir/$tasca /lib/specs2000/art/exe/art.exe -scanfile c756hel.in -trainfile1 a10.img -stride 2 -startx 134 -starty 220 -endx 139 -endy 225 -objects 1 > $art/test.out 2> $art/test.err
+
+grep "CACHE" $ryzen7_2Dir/$tasca >>$ryzen7_2Dir/CACHE$processor
+

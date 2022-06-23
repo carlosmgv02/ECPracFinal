@@ -1,0 +1,21 @@
+#! /bin/bash
+echo "AMP"
+cd /home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/ammp
+./scriptAMP
+
+echo "ART"
+cd /home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/art
+./scriptART
+
+echo "BZIP2"
+cd /home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/bzip2
+./scriptBZIP
+
+echo "EON"
+cd /home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/eon
+./scriptEON
+
+echo "VPR"
+cd /home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/vpr
+./scriptVPR
+

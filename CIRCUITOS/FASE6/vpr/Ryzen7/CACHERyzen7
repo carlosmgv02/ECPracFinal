@@ -1,0 +1,36 @@
+sim: command line: sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_IL1:256:64:4:l -redir:sim /home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/vpr/Ryzen7/Tasca6-2_IL1r7.txt /lib/specs2000/vpr/exe/vpr.exe net.in arch.in place.in route.out -nodisp -route_only -route_chan_width 15 -pres_fac_mult 2 -acc_fac 1 -first_iter_pres_fac 4 -initial_pres_fac 8 
+-cache:il1       CACHE_IL1:256:64:4:l # l1 inst cache config, i.e., {<config>|dl1|dl2|none}
+CACHE_IL1.accesses        138038897 # total number of accesses
+CACHE_IL1.hits            138038427 # total number of hits
+CACHE_IL1.misses                470 # total number of misses
+CACHE_IL1.replacements            6 # total number of replacements
+CACHE_IL1.writebacks              0 # total number of writebacks
+CACHE_IL1.invalidations            0 # total number of invalidations
+CACHE_IL1.miss_rate          0.0000 # miss rate (i.e., misses/ref)
+CACHE_IL1.repl_rate          0.0000 # replacement rate (i.e., repls/ref)
+CACHE_IL1.wb_rate            0.0000 # writeback rate (i.e., wrbks/ref)
+CACHE_IL1.inv_rate           0.0000 # invalidation rate (i.e., invs/ref)
+sim: command line: sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_DL1:64:64:8:l -redir:sim /home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/vpr/Ryzen7/Tasca6-2_DL1r7.txt /lib/specs2000/vpr/exe/vpr.exe net.in arch.in place.in route.out -nodisp -route_only -route_chan_width 15 -pres_fac_mult 2 -acc_fac 1 -first_iter_pres_fac 4 -initial_pres_fac 8 
+-cache:il1       CACHE_DL1:64:64:8:l # l1 inst cache config, i.e., {<config>|dl1|dl2|none}
+CACHE_DL1.accesses        138038899 # total number of accesses
+CACHE_DL1.hits            138038427 # total number of hits
+CACHE_DL1.misses                472 # total number of misses
+CACHE_DL1.replacements           31 # total number of replacements
+CACHE_DL1.writebacks              0 # total number of writebacks
+CACHE_DL1.invalidations            0 # total number of invalidations
+CACHE_DL1.miss_rate          0.0000 # miss rate (i.e., misses/ref)
+CACHE_DL1.repl_rate          0.0000 # replacement rate (i.e., repls/ref)
+CACHE_DL1.wb_rate            0.0000 # writeback rate (i.e., wrbks/ref)
+CACHE_DL1.inv_rate           0.0000 # invalidation rate (i.e., invs/ref)
+sim: command line: sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_L2:1024:64:8:l -redir:sim /home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/vpr/Ryzen7/Tasca6-2_DL2r7.txt /lib/specs2000/vpr/exe/vpr.exe net.in arch.in place.in route.out -nodisp -route_only -route_chan_width 15 -pres_fac_mult 2 -acc_fac 1 -first_iter_pres_fac 4 -initial_pres_fac 8 
+-cache:il1       CACHE_L2:1024:64:8:l # l1 inst cache config, i.e., {<config>|dl1|dl2|none}
+CACHE_L2.accesses         138038902 # total number of accesses
+CACHE_L2.hits             138038435 # total number of hits
+CACHE_L2.misses                 467 # total number of misses
+CACHE_L2.replacements             0 # total number of replacements
+CACHE_L2.writebacks               0 # total number of writebacks
+CACHE_L2.invalidations            0 # total number of invalidations
+CACHE_L2.miss_rate           0.0000 # miss rate (i.e., misses/ref)
+CACHE_L2.repl_rate           0.0000 # replacement rate (i.e., repls/ref)
+CACHE_L2.wb_rate             0.0000 # writeback rate (i.e., wrbks/ref)
+CACHE_L2.inv_rate            0.0000 # invalidation rate (i.e., invs/ref)

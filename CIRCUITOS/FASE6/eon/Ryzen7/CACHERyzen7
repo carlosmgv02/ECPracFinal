@@ -1,0 +1,36 @@
+sim: command line: sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_IL1:256:64:4:l -redir:sim /home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/eon/Ryzen7/Tasca6-2_IL1r7.txt /lib/specs2000/eon/exe/eon.exe chair.control.cook chair.camera chair.surfaces chair.cook.ppm ppm pixels_out.cook 
+-cache:il1       CACHE_IL1:256:64:4:l # l1 inst cache config, i.e., {<config>|dl1|dl2|none}
+CACHE_IL1.accesses        110392204 # total number of accesses
+CACHE_IL1.hits            110261679 # total number of hits
+CACHE_IL1.misses             130525 # total number of misses
+CACHE_IL1.replacements       130112 # total number of replacements
+CACHE_IL1.writebacks              0 # total number of writebacks
+CACHE_IL1.invalidations            0 # total number of invalidations
+CACHE_IL1.miss_rate          0.0012 # miss rate (i.e., misses/ref)
+CACHE_IL1.repl_rate          0.0012 # replacement rate (i.e., repls/ref)
+CACHE_IL1.wb_rate            0.0000 # writeback rate (i.e., wrbks/ref)
+CACHE_IL1.inv_rate           0.0000 # invalidation rate (i.e., invs/ref)
+sim: command line: sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_DL1:64:64:8:l -redir:sim /home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/eon/Ryzen7/Tasca6-2_DL1r7.txt /lib/specs2000/eon/exe/eon.exe chair.control.cook chair.camera chair.surfaces chair.cook.ppm ppm pixels_out.cook 
+-cache:il1       CACHE_DL1:64:64:8:l # l1 inst cache config, i.e., {<config>|dl1|dl2|none}
+CACHE_DL1.accesses        110427429 # total number of accesses
+CACHE_DL1.hits            110405190 # total number of hits
+CACHE_DL1.misses              22239 # total number of misses
+CACHE_DL1.replacements        21846 # total number of replacements
+CACHE_DL1.writebacks              0 # total number of writebacks
+CACHE_DL1.invalidations            0 # total number of invalidations
+CACHE_DL1.miss_rate          0.0002 # miss rate (i.e., misses/ref)
+CACHE_DL1.repl_rate          0.0002 # replacement rate (i.e., repls/ref)
+CACHE_DL1.wb_rate            0.0000 # writeback rate (i.e., wrbks/ref)
+CACHE_DL1.inv_rate           0.0000 # invalidation rate (i.e., invs/ref)
+sim: command line: sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_L2:1024:64:8:l -redir:sim /home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/eon/Ryzen7/Tasca6-2_DL2r7.txt /lib/specs2000/eon/exe/eon.exe chair.control.cook chair.camera chair.surfaces chair.cook.ppm ppm pixels_out.cook 
+-cache:il1       CACHE_L2:1024:64:8:l # l1 inst cache config, i.e., {<config>|dl1|dl2|none}
+CACHE_L2.accesses         110405584 # total number of accesses
+CACHE_L2.hits             110405164 # total number of hits
+CACHE_L2.misses                 420 # total number of misses
+CACHE_L2.replacements             0 # total number of replacements
+CACHE_L2.writebacks               0 # total number of writebacks
+CACHE_L2.invalidations            0 # total number of invalidations
+CACHE_L2.miss_rate           0.0000 # miss rate (i.e., misses/ref)
+CACHE_L2.repl_rate           0.0000 # replacement rate (i.e., repls/ref)
+CACHE_L2.wb_rate             0.0000 # writeback rate (i.e., wrbks/ref)
+CACHE_L2.inv_rate            0.0000 # invalidation rate (i.e., invs/ref)

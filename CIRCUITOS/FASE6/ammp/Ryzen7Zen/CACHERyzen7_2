@@ -1,0 +1,39 @@
+sim: command line: sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_IL1:64:64:8:l -redir:sim /home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/ammp/Ryzen7Zen/Tasca6-2_IL1r7-2.txt /lib/specs2000/ammp/exe/ammp.exe 
+-cache:il1       CACHE_IL1:64:64:8:l # l1 inst cache config, i.e., {<config>|dl1|dl2|none}
+CACHE_IL1.accesses        108692932 # total number of accesses
+CACHE_IL1.hits            108692692 # total number of hits
+CACHE_IL1.misses                240 # total number of misses
+CACHE_IL1.replacements            0 # total number of replacements
+CACHE_IL1.writebacks              0 # total number of writebacks
+CACHE_IL1.invalidations            0 # total number of invalidations
+CACHE_IL1.miss_rate          0.0000 # miss rate (i.e., misses/ref)
+CACHE_IL1.repl_rate          0.0000 # replacement rate (i.e., repls/ref)
+CACHE_IL1.wb_rate            0.0000 # writeback rate (i.e., wrbks/ref)
+CACHE_IL1.inv_rate           0.0000 # invalidation rate (i.e., invs/ref)
+sim_IPC                      0.7098 # instructions per cycle
+sim: command line: sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_DL1:64:64:8:l -redir:sim /home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/ammp/Ryzen7Zen/Tasca6-2_DL1r7-2.txt /lib/specs2000/ammp/exe/ammp.exe 
+-cache:il1       CACHE_DL1:64:64:8:l # l1 inst cache config, i.e., {<config>|dl1|dl2|none}
+CACHE_DL1.accesses        108692932 # total number of accesses
+CACHE_DL1.hits            108692692 # total number of hits
+CACHE_DL1.misses                240 # total number of misses
+CACHE_DL1.replacements            0 # total number of replacements
+CACHE_DL1.writebacks              0 # total number of writebacks
+CACHE_DL1.invalidations            0 # total number of invalidations
+CACHE_DL1.miss_rate          0.0000 # miss rate (i.e., misses/ref)
+CACHE_DL1.repl_rate          0.0000 # replacement rate (i.e., repls/ref)
+CACHE_DL1.wb_rate            0.0000 # writeback rate (i.e., wrbks/ref)
+CACHE_DL1.inv_rate           0.0000 # invalidation rate (i.e., invs/ref)
+sim_IPC                      0.7098 # instructions per cycle
+sim: command line: sim-outorder -fastfwd 100000000 -max:inst 100000000 -cache:il1 CACHE_L2:1024:64:8:l -redir:sim /home/milax/Documents/GitHub/ECPrac2/Prac2aConvo/FASE6/ammp/Ryzen7Zen/Tasca6-2_DL2r7.txt /lib/specs2000/ammp/exe/ammp.exe 
+-cache:il1       CACHE_L2:1024:64:8:l # l1 inst cache config, i.e., {<config>|dl1|dl2|none}
+CACHE_L2.accesses         108692932 # total number of accesses
+CACHE_L2.hits             108692692 # total number of hits
+CACHE_L2.misses                 240 # total number of misses
+CACHE_L2.replacements             0 # total number of replacements
+CACHE_L2.writebacks               0 # total number of writebacks
+CACHE_L2.invalidations            0 # total number of invalidations
+CACHE_L2.miss_rate           0.0000 # miss rate (i.e., misses/ref)
+CACHE_L2.repl_rate           0.0000 # replacement rate (i.e., repls/ref)
+CACHE_L2.wb_rate             0.0000 # writeback rate (i.e., wrbks/ref)
+CACHE_L2.inv_rate            0.0000 # invalidation rate (i.e., invs/ref)
+sim_IPC                      0.7098 # instructions per cycle

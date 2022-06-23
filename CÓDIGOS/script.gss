@@ -1,0 +1,10 @@
+#Load
+load Fetch.g13 "ownTest.mem"
+load Mem.g0 "ownTest.mem"
+load ctrl.g0 "uc.mem"
+#load ALUCtrl.g0 "ALUControl.mem"
+
+#Reset
+set reset 1'b1
+clock +1
+set reset 1'b0

@@ -1,0 +1,45 @@
+INTEL
+L1 Instructions
+    Access time (ns): 0.294569
+    Cache height x width (mm): 0.148294 x 0.460887
+    Total leakage power of a bank (mW): 23.3594
+L1 Data
+    Access time (ns): 0.294569
+    Cache height x width (mm): 0.148294 x 0.460887
+    Total leakage power of a bank (mW): 23.3594
+L2 Cache
+    Access time (ns): 0.535064
+    Cache height x width (mm): 1.07679 x 0.666615
+    Total leakage power of a bank (mW): 201.815
+
+RYZEN 7 3700U
+L1 Instructions
+    Access time (ns): 0.379722
+    Cache height x width (mm): 0.296589 x 0.495544
+    Total leakage power of a bank (mW): 52.2378
+L1 Data
+    Access time (ns): 0.294569
+    Cache height x width (mm): 0.148294 x 0.460887
+    Total leakage power of a bank (mW): 23.3594
+L2 Cache
+    Access time (ns): 0.773083
+    Cache height x width (mm): 1.19217 x 1.0693
+    Total leakage power of a bank (mW): 394.499
+
+RYZEN 7 ZEN 2
+L1 Instructions
+    Access time (ns): 0.294569
+    Cache height x width (mm): 0.148294 x 0.460887
+    Total leakage power of a bank (mW): 23.3594
+L1 Data
+    Access time (ns): 0.294569
+    Cache height x width (mm): 0.148294 x 0.460887
+    Total leakage power of a bank (mW): 23.3594
+L2 Cache
+    Access time (ns): 0.773083
+    Cache height x width (mm): 1.19217 x 1.0693
+    Total leakage power of a bank (mW): 394.499
+IntelHalfSize
+    Access time (ns): 0.773083
+    Cache height x width (mm): 1.19217 x 1.0693
+    Total leakage power of a bank (mW): 394.499

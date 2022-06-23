@@ -1,0 +1,12 @@
+02/ 1000    #jump
+04/ 2190    #beq
+20/ 40a1    #add
+22/ 41a1    #sub
+23/ c83     #lw
+24/ 4021    #and
+25/ 4061    #or
+2A/ 41e1    #slt
+2B/ 8a      #sw
+2C/ 41ad    #push
+2D/ 8191    #cmpseti
+2F/ 4C87    #pop
