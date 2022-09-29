@@ -1,6 +1,6 @@
 # ECPracFinal
 Pràctica final Estructura de Computadors
-* **CIRCUITOS:**
+## Circuitos:
   * *FASE2-3-4.v*: circuit de la unitat de control amb les següents instruccions implementades.
     * Push
     * Pop
@@ -12,13 +12,14 @@ Pràctica final Estructura de Computadors
 	  * */ammp/art/bzip2/eon/vpr*: inclou script per a ser executat i respectives carpetes amb resultats.
 	  * */cacti*: inclou fitxer de configuració de cada caché i script per a ser executat.
 	  * script: script encarregat d'executar els scripts de cada benchmark.
-* **CÓDIGOS:**
-	* *mult.mem*: fitxer proporcionat al campus virtual.
-	* *uc.mem*: codificació de les instruccions per a la unitat de control.
-	* *script.gss*: script per a no haver de carregar els fitxers de memòria al circuit manualment.
-	* *Tarea5-1.asm*: programa en ensamblador per a provar les instruccions bàsiques de l'ISA.	
-	* *Tarea5-1.mem*: codificació del programa en ensamblador de les instruccions bàsiques.
-	* *Tarea5-2.asm*: programa en ensamblador per a provar les intstruccions adicionals afegides.
-	* *Tarea5-2.mem*: codificació del programa en ensamblador de les instruccions adicionals.
-* **INFORME_EC.pdf**: documentació de la pràctica
-* **Processadors.xlsx**: anàlisi dels benchmarks amb gràfiques
+## Códigos:
+* *mult.mem*: fitxer proporcionat al campus virtual.
+* *uc.mem*: codificació de les instruccions per a la unitat de control.
+* *script.gss*: script per a no haver de carregar els fitxers de memòria al circuit manualment.
+* *Tarea5-1.asm*: programa en ensamblador per a provar les instruccions bàsiques de l'ISA.	
+* *Tarea5-1.mem*: codificació del programa en ensamblador de les instruccions bàsiques.
+* *Tarea5-2.asm*: programa en ensamblador per a provar les intstruccions adicionals afegides.
+* *Tarea5-2.mem*: codificació del programa en ensamblador de les instruccions adicionals.
+## Documentos
+ * **INFORME_EC.pdf**: documentació de la pràctica
+ * **Processadors.xlsx**: anàlisi dels benchmarks amb gràfiques
